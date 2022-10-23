@@ -1,0 +1,93 @@
+@import '../../colors.scss';
+@import '../../mixins.scss';
+
+
+ul{
+   list-style: none;
+
+}
+
+header{
+   width:100%;
+   background-color: white;
+   z-index:1000;
+   box-shadow: 3px 3px 3px 3px #f0f0f0;
+}
+
+nav{
+   @include flex(space-between,center,row);
+   padding:10px 0;
+
+}
+
+.logo{
+   color: var(--main-color);
+}
+
+ul{
+   @media(max-width:576px){
+      position: fixed;
+      width: 100%;
+      left:0;
+      top:70px;
+      background-color: var(--gray-light);
+    @include flex(center,center,column);
+
+   }
+
+  @include flex(space-between,center,row);
+  position: relative;
+  z-index: 10000;
+
+
+}
+
+li{
+   margin:0 5px;
+   color: var(--gray-color);
+   padding: 7px 14px;
+   border-radius:5px;
+   cursor: pointer;
+   &:hover{
+      background-color: var(--main-color);
+      color: white;
+   }
+   @media(max-width: 767px){
+     width:100%;
+     margin-top: 10px;
+     background-color: #f0f0f0;
+     padding: 7px 20px;
+     border-radius: 5px;
+   };
+
+
+}
+
+
+.icons{
+
+     @media(max-width:576px){
+           width:60%;
+           @include flex(space-between,center,row);
+
+
+     }
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.icon{
+   width:40px;
+   height:40px;
+   border-radius: 50%;
+   background-color: var(--gray-color);
+   @include flex(center,center,row);
+   cursor: pointer;
+   margin-right: 10px;
+
+}
+
+@import '../../classes.scss';

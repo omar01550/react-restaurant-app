@@ -1,0 +1,59 @@
+
+@import '../../colors.scss';
+@import '../../mixins.scss';
+@import '../../classes.scss';
+
+.home{
+   min-height: 90vh;
+
+}
+
+.home .container{
+   @media(max-width:576px){
+        @include flex(center,center,column);
+
+   }
+   @include flex(space-between,center,row);
+   flex-wrap: wrap;
+   padding-top: 30px;
+}
+
+.content{
+   padding:10px;
+   @media(min-width:767px){
+        width:45%;
+   }
+}
+
+
+span{
+   font-size:2rem;
+   color:var(--main-color);
+   text-transform: capitalize;
+   font-weight: bold;
+   margin-top: 30px;
+}
+
+h1{
+   color:var(--blue-color);
+}
+
+p{
+   color: var(--gray-color);
+}
+
+//images
+
+.images{
+   margin-top: 20px;
+   @media(min-width:767px){
+        width:45%;
+   }
+   img{
+      width:100%;
+      height: 100%;
+   }
+}
+
+
+@import '../../classes.scss';

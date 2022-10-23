@@ -1,0 +1,20 @@
+@import '../../colors.scss';
+@import '../../mixins.scss';
+
+.dishes .container{
+     padding: 30px 0;
+}
+
+.cards{
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   box-shadow: 3px 3px 3px 3px 3px #f0f0f0;
+   margin-top: 10px;
+}
+
+
+@import '../../classes.scss';

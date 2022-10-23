@@ -1,0 +1,71 @@
+
+@import '../../colors.scss';
+@import '../../mixins.scss';
+@import '../../classes.scss';
+
+
+.card{
+   width:250px;
+   min-height: 250px;
+   margin-top: 35px;
+   background-color: var(--gray-light);
+   @include flex(center,center,column);
+   padding:10px 0;
+   position: relative;
+   overflow: hidden;
+
+    &:hover .overlay{
+       transform: translateY(0);
+    }
+
+}
+
+
+.overlay{
+    @include overlay(0.5);
+    transition: 500ms;
+    transform: translateY(-100%);
+     .icon{
+        background-color: white;
+        margin: 10px;
+     }
+ }
+
+
+
+
+
+.Product-image{
+   width:70%;
+   margin:0px auto;
+   position: relative;
+   z-index: 10;
+}
+
+.product-name{
+   color: var(--blue-color);
+   text-transform: capitalize;
+   font-weight: bold;
+   font-size:1.6rem;
+   margin-top:-10px;
+   border-radius:10px;
+   position: relative;
+   z-index:10;
+}
+
+.buy{
+    @include flex(center,center,row) ;
+    position: relative;
+    z-index: 10;
+}
+
+.rate{
+   margin-top:10px;
+}
+.rate i{
+   color: var(--main-color)
+}
+
+
+
+@import '../../classes.scss';

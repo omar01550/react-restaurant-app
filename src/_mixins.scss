@@ -1,0 +1,24 @@
+@mixin overlay ($degree) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(black,$degree);
+}
+
+
+@mixin flex($justify,$align,$direction){
+     display: flex;
+     justify-content: $justify;
+     align-items: $align;
+     flex-direction: $direction;
+}
+
+
+@mixin center-position(){
+   position: absolute;
+   left:50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}

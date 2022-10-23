@@ -1,0 +1,12 @@
+@import '../../colors.scss';
+@import '../../mixins.scss';
+@import '../../classes.scss';
+
+.menu{
+   width: 100%;
+   min-height: 100vh;
+}
+
+.menu .container{
+     padding:30px 0;
+}
