@@ -1,0 +1,46 @@
+@import '../../colors.scss';
+@import '../../mixins.scss';
+@import '../../classes.scss';
+
+
+.cart{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 7px;
+   margin-top: 10px;
+   background-color: var(--gray-light);
+   padding:10px;
+   width: 100%;
+
+
+     h2{
+        font-size:1.2rem
+     }
+
+     button{
+        margin: 0;
+        font-size: 0.8rem;
+        margin-right: 10px;
+
+     }
+
+
+     .price{
+        color: white;
+        font-size:1.2rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        background-color: var(--main-color);
+        border-radius: 5px;
+
+     }
+
+}
+
+
+
+
+
+
+@import '../../classes.scss';

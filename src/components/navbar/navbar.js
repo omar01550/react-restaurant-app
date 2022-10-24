@@ -1,8 +1,9 @@
 import {React} from 'react';
- import {Link} from 'react-router-dom';
+ import {Link } from "react-router-dom";
 import './navbar.scss';
 
-function Navbar() {
+function Navbar({logo}) {
+
 
      function showNavMenu() {
          document.querySelector("header ul").classList.toggle("hidden");
@@ -11,15 +12,18 @@ function Navbar() {
     return (
        <header>
             <nav className="container">
-                 <h1 className="logo">Resto</h1>
+                 <h1 className="logo">{logo}</h1>
                  <ul className="">
                       <li>
-                          Home
+                          <Link to='/'> home </Link>
                       </li>
-                      <li>dishes</li>
-                      <li>menu</li>
-                      <li>about</li>
-                      <li>preview</li>
+                      <li>
+                          <Link to='/dishes'> Dishes </Link>
+                      </li>
+                      <li>
+                            <Link to='/menu'> menu </Link>
+                       </li>
+
                  </ul>
 
                  <div className="icons">
@@ -33,13 +37,20 @@ function Navbar() {
                          <i className="fa fa-heart"></i>
                      </div>
                      <div className="icon">
-                         <i className="fa fa-shopping-cart"></i>
+                         <Link to="/cart">
+                              <i className="fa fa-shopping-cart"></i>
+                         </Link>
+
+
+
                      </div>
 
 
 
                  </div>
             </nav>
+
+
        </header>
     )
 }

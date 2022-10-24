@@ -10,3 +10,8 @@
 .menu .container{
      padding:30px 0;
 }
+
+.menu .cards{
+   @include flex(space-around,center,row);
+   flex-wrap: wrap;
+}

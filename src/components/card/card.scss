@@ -22,7 +22,7 @@
 
 
 .overlay{
-    @include overlay(0.5);
+    @include overlay(green,0.5);
     transition: 500ms;
     transform: translateY(-100%);
      .icon{

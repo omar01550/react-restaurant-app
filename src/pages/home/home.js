@@ -3,14 +3,15 @@ import './home.scss';
 import Image from './dish-1.png';
 
 
-function Home() {
+function Home({data}) {
+
    return (
        <section className="home">
             <div className="container">
             <div className="content">
-                   <span>our spisial dishes</span>
-                   <h1>fried chicken</h1>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi</p>
+                   <span>{data.title}</span>
+                   <h1>{data.productName}</h1>
+                   <p>{data.discribtion}</p>
 
                    <AddToCart/>
              </div>

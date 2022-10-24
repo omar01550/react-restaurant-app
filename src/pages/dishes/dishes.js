@@ -1,7 +1,7 @@
 import Card from '../../components/card/card';
 import './dishes.scss';
 
-export default function Dishes() {
+export default function Dishes({data}) {
      return(
          <section className="dishes">
               <div className="container">
@@ -9,8 +9,12 @@ export default function Dishes() {
                    <h3 className="second-title">POPULAR DISHES</h3>
 
                    <div className="cards">
-                         <Card/>
-                         
+                         {data.map(ele =>{
+                            return (
+                                <Card data={ele}/>
+                            )
+                         })}
+
                    </div>
 
               </div>

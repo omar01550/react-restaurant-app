@@ -1,7 +1,8 @@
 import './menu.scss';
 import Card from '../../components/card/card';
 
-export default function Menu() {
+export default function Menu({data,setCartProducts,cartProducts}) {
+
   return (
       <section className="menu">
          <div className="container">
@@ -9,12 +10,12 @@ export default function Menu() {
               <h4 className="second-title">TODAY,S SPICIALITY</h4>
 
               <div className="cards">
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>
-                    <Card/>                     
+                    {data.map(ele =>{
+                       return (
+                          <Card data={ele} setCartProducts={setCartProducts} cartProducts={cartProducts}/>
+                       )
+                    })}
+
               </div>
          </div>
       </section>

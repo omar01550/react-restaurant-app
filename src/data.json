@@ -1,0 +1,53 @@
+[
+   {
+     "logo":"resto",
+     "mainDishes":[
+       {
+           "type":"dish",
+            "id":1,
+            "title":"Our Spisial Dishes",
+            "productName" : "fried chicken",
+            "discribtion": "checken dish good good good good good jj",
+            "img" : "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            
+       }
+     ],
+     "menuDishes" : [
+        {
+           "id":811198,
+           "title":"tasty food",
+           "rate":4,
+           "price":15.900,
+           "img":"../../images/dish-1.png"
+        },
+        {
+           "id":898008,
+           "title":"tasty food",
+           "rate":4,
+           "price":15.900,
+           "img":"../../images/dish-2.png"
+        },
+        {
+           "id":10108,
+           "title":"tasty food",
+           "rate":4,
+           "price":13.900,
+           "img":"../../images/dish-2.png"
+        },
+        {
+           "id":89898,
+           "title":"tasty food",
+           "rate":3,
+           "price":15.900,
+           "img":"../../images/dish-2.png"
+        },
+        {
+           "id":898989,
+           "title":"tasty food",
+           "rate":2,
+           "price":10.900,
+           "img":"../../images/dish-3.png"
+        }
+     ]
+   }
+]

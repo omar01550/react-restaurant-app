@@ -3,16 +3,17 @@ import AddToCart from '../add-to-cart-btn/add_to_cart';
 import ProductImage from '../../images/dish-1.png';
 
 
-function Card() {
+function Card({data,setCartProducts,cartProducts}) {
+
     return (
-         <div className="card">
+         <div className="card" id={data.id}>
                  <div className="overlay">
                      <div className="icon">
                          <i className="fa fa-heart"></i>
                      </div>
                  </div>
-                 <img src={ProductImage} alt="not found" className="Product-image"/>
-                 <h4 className="product-name">tasty food</h4>
+                 <img src={data.img} alt="not found" className="Product-image"/>
+                 <h4 className="product-name">{data.title}</h4>
                  <div className="rate">
                      <i className="fa fa-star"></i>
                      <i className="fa fa-star"></i>
@@ -21,8 +22,8 @@ function Card() {
                  </div>
 
                  <div className="buy">
-                      <span className="price">15,90</span>
-                      <AddToCart/>
+                      <span className="price">{data.price}</span>
+                      <AddToCart ele={data} setCartProducts={setCartProducts} cartProducts={cartProducts}/>
                  </div>
          </div>
     )

@@ -1,10 +1,11 @@
 import './add_to_cart.scss';
 
 
-function AddToCart() {
+function AddToCart({ele,setCartProducts,cartProducts}) {
 
     function addItemToCart() {
-       console.log(true);
+         let x={content:"product1",id:89859894,price:9.3};
+          setCartProducts([...cartProducts,x]);
     }
     return (
        <button onClick={addItemToCart}>Add To Cart</button>
