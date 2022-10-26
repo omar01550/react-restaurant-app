@@ -1,12 +1,23 @@
 import {React} from 'react';
- import {Link } from "react-router-dom";
+ import {Link,Routes,Rotue } from "react-router-dom";
 import './navbar.scss';
 
 function Navbar({logo}) {
 
 
-     function showNavMenu() {
-         document.querySelector("header ul").classList.toggle("hidden");
+     function handelActive() {
+       document.querySelectorAll("nav ul li a").forEach((li, i) => {
+           li.onclick=function () {
+                   document.querySelectorAll("nav ul li a").forEach((ele, i) => {
+                       ele.classList.remove("active")   ;
+                   });
+               li.classList.add("active");
+           }
+
+       });
+
+
+
      }
 
     return (
@@ -15,13 +26,13 @@ function Navbar({logo}) {
                  <h1 className="logo">{logo}</h1>
                  <ul className="">
                       <li>
-                          <Link to='/'> home </Link>
+                          <Link to='/' onClick={handelActive} className="active"> home </Link>
                       </li>
                       <li>
-                          <Link to='/dishes'> Dishes </Link>
+                          <Link to='/dishes' onClick={handelActive}> Dishes </Link>
                       </li>
-                      <li>
-                            <Link to='/menu'> menu </Link>
+                      <li onClick={handelActive}>
+                            <Link to='/menu' onClick={handelActive}> menu </Link>
                        </li>
 
                  </ul>
@@ -31,7 +42,7 @@ function Navbar({logo}) {
                          <i className="fa fa-search"></i>
                      </div>
                      <div className="icon">
-                         <i className="fa fa-bars" onClick={showNavMenu}></i>
+                         <i className="fa fa-bars"></i>
                      </div>
                      <div className="icon">
                          <i className="fa fa-heart"></i>

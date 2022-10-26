@@ -1,7 +1,9 @@
 import Card from '../../components/card/card';
 import './dishes.scss';
-
-export default function Dishes({data}) {
+import {useSelector} from 'react-redux';
+export default function Dishes({cartProducts,setCartProducts}) {
+  const data = useSelector(data => data[0].menuDishes);
+  console.log(data);
      return(
          <section className="dishes">
               <div className="container">
@@ -9,12 +11,13 @@ export default function Dishes({data}) {
                    <h3 className="second-title">POPULAR DISHES</h3>
 
                    <div className="cards">
-                         {data.map(ele =>{
-                            return (
-                                <Card data={ele}/>
-                            )
-                         })}
-
+                       {
+                        data.map(ele =>{
+                           return (
+                              <Card data={ele} setCartProducts={setCartProducts} cartProducts={cartProducts}/>
+                           )
+                        })
+                       }
                    </div>
 
               </div>

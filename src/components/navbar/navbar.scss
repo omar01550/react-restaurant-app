@@ -11,17 +11,21 @@ header{
    width:100%;
    background-color: white;
    z-index:1000;
-   box-shadow: 3px 3px 3px 3px #f0f0f0;
+
+
+
 }
+
 
 nav{
    @include flex(space-between,center,row);
-   padding:10px 0;
-
+   padding:5px 0;
+   border-bottom: 1px solid var(--main-color);
 }
 
 .logo{
    color: var(--main-color);
+   text-transform: capitalize;
 }
 
 ul{
@@ -44,11 +48,10 @@ ul{
 
 li{
    margin:0 5px;
-   color: var(--gray-color);
-   padding: 7px 14px;
    border-radius:5px;
+   text-transform: capitalize;
    cursor: pointer;
-   &:hover{
+   &:hover a{
       background-color: var(--main-color);
       color: white;
    }
@@ -58,8 +61,18 @@ li{
      background-color: #f0f0f0;
      padding: 7px 20px;
      border-radius: 5px;
-   };
+   }
 
+
+
+a{
+   color:var(--gray-color);
+   display: block;
+   width: 100%;
+   height: 100%;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
 
 }
 
@@ -83,11 +96,27 @@ li{
    width:40px;
    height:40px;
    border-radius: 50%;
-   background-color: var(--gray-color);
+   background-color: var(--gray-light);
    @include flex(center,center,row);
    cursor: pointer;
    margin-right: 10px;
 
+   &:hover{
+      background-color: var(--main-color);
+   }
+
 }
 
+.icon a{
+   color:white
+}
+
+.icon:nth-child(2){
+    display: none;
+}
 @import '../../classes.scss';
+
+a.active{
+  background-color: var(--main-color);
+  color: white;
+}

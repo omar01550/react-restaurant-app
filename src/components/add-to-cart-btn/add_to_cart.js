@@ -8,7 +8,7 @@ function AddToCart({ele,setCartProducts,cartProducts}) {
           setCartProducts([...cartProducts,x]);
     }
     return (
-       <button onClick={addItemToCart}>Add To Cart</button>
+       <button onClick={addItemToCart} className="add-to-cart">Add To Cart</button>
     )
 }
 

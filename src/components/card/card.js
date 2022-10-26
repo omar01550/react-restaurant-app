@@ -5,6 +5,8 @@ import ProductImage from '../../images/dish-1.png';
 
 function Card({data,setCartProducts,cartProducts}) {
 
+
+
     return (
          <div className="card" id={data.id}>
                  <div className="overlay">
@@ -12,7 +14,7 @@ function Card({data,setCartProducts,cartProducts}) {
                          <i className="fa fa-heart"></i>
                      </div>
                  </div>
-                 <img src={data.img} alt="not found" className="Product-image"/>
+                 <img src={require("../../images/dish-1.png")} alt="not found" className="Product-image"/>
                  <h4 className="product-name">{data.title}</h4>
                  <div className="rate">
                      <i className="fa fa-star"></i>

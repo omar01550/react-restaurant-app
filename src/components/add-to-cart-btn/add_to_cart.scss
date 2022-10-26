@@ -3,16 +3,18 @@
 @import '../../classes.scss';
 
 
-button{
+.add-to-cart{
    padding: 10px 20px;
    background-color: var(--blue-color);
    color: white;
    font-weight: bold;
    border: none;
    border-radius:5px;
-   margin:20px 10px;
+   margin-left: 5px;
    cursor: pointer;
-
+   &:hover{
+      transform: scale(1.050);
+   }
 }
 
 

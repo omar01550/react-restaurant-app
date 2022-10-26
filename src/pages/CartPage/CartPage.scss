@@ -2,7 +2,13 @@
 @import '../../mixins.scss';
 @import '../../classes.scss';
 
+.CartPage{
+   background-color: var(--gray-light);
+   width: 100%;
+   min-height: 100vh;
+   padding-top: 30px;
 
+}
 .cart{
    display: flex;
    justify-content: space-between;
