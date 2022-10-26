@@ -32,6 +32,8 @@ ul{
    @media(max-width:576px){
       position: fixed;
       width: 100%;
+      padding: 30px 20px;
+      margin-top:-20px;
       left:0;
       top:70px;
       background-color: var(--gray-light);
@@ -59,7 +61,6 @@ li{
      width:100%;
      margin-top: 10px;
      background-color: #f0f0f0;
-     padding: 7px 20px;
      border-radius: 5px;
    }
 
@@ -111,12 +112,20 @@ a{
    color:white
 }
 
-.icon:nth-child(2){
-    display: none;
+.fa-bars{
+   display: none;
+  @media(max-width:767px){
+     display: block;
+  }
 }
+
 @import '../../classes.scss';
 
 a.active{
   background-color: var(--main-color);
   color: white;
+}
+
+nav .hidden{
+   display: none;
 }

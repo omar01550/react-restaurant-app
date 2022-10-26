@@ -6,7 +6,23 @@
 .home{
    min-height: 100vh;
     width: 100%;
-    background-color: white
+    background-color: white;
+    position: relative;
+    background-image: url('../../images/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+    .over-lay{
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       background-color: black;
+       opacity: 70%;
+       left:0;
+       top:0;
+    }
+
 }
 
 .home .container{
@@ -22,7 +38,10 @@
 .content{
    padding:10px;
    & > *{
-      margin-top:10px;
+      margin-top:12px;
+      position: relative;
+      z-index:100;
+
    }
    @media(min-width:767px){
         width:45%;
@@ -43,7 +62,7 @@ h1{
 }
 
 p{
-   color: var(--gray-color);
+   color: white;
 }
 
 //images
@@ -56,6 +75,22 @@ p{
    img{
       width:100%;
       height: 100%;
+      //animation: homeImg 3s 0.5s 1 linear;
+      position: relative;
+      z-index:100;
+
+   }
+}
+
+@keyframes homeImg {
+   0%{
+      transform: rotate(0deg);
+   }
+   50%{
+      transform: rotate(360deg);
+   }
+   100%{
+      transform: rotate(0deg);
    }
 }
 

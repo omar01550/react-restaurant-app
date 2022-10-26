@@ -3,6 +3,23 @@
 
 .dishes{
   background-color: white;
+  background-image: url('../../images/bg-dishes.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+  .over-lay{
+     position: absolute;
+     left:0;
+     top:0;
+     background-color: black;
+     width: 100%;
+     height: 100%;
+     opacity: 50%;
+
+  }
+
 }
 
 .dishes .container{

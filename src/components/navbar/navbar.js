@@ -4,7 +4,10 @@ import './navbar.scss';
 
 function Navbar({logo}) {
 
-
+   function handelMenu() {
+      let ul = document.querySelector("header ul");
+      ul.classList.toggle("hidden")
+   }
      function handelActive() {
        document.querySelectorAll("nav ul li a").forEach((li, i) => {
            li.onclick=function () {
@@ -24,7 +27,7 @@ function Navbar({logo}) {
        <header>
             <nav className="container">
                  <h1 className="logo">{logo}</h1>
-                 <ul className="">
+                 <ul className="hidden">
                       <li>
                           <Link to='/' onClick={handelActive} className="active"> home </Link>
                       </li>
@@ -42,7 +45,7 @@ function Navbar({logo}) {
                          <i className="fa fa-search"></i>
                      </div>
                      <div className="icon">
-                         <i className="fa fa-bars"></i>
+                         <i className="fa fa-bars" onClick={handelMenu}></i>
                      </div>
                      <div className="icon">
                          <i className="fa fa-heart"></i>

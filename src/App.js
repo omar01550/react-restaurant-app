@@ -13,6 +13,8 @@ import CartPage from './pages/CartPage/CartPage';
 
 function App() {
    const data = useSelector(data => data[0] );
+   const cartStore = useSelector(data => data);
+   console.log(cartStore);
    const [cartProducts,setCartProducts] = useState([]);
      return (
        <div className="App">

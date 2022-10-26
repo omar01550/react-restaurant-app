@@ -18,12 +18,16 @@
    text-align: center;
    color: var(--main-color);
    font-size:20px;
+   position: relative;
+   z-index: 100;
 
 }
 
 .second-title{
    margin-top: 10px;
-   color: var(--blue-color);
+   color: white;
    text-align: center;
    font-size: 25px;
+   position: relative;
+   z-index: 100;
 }

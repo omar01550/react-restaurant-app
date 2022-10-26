@@ -7,6 +7,7 @@ function Home() {
    return (
 
           <section className="home">
+              <div className="over-lay"></div>
                <div className="container">
                     <div className="content">
                         <span>Our spicial dish</span>
@@ -15,7 +16,7 @@ function Home() {
                         <AddToCart/>
                     </div>
                     <div className="images">
-                       <img src={require("../../images/home-img-1.png")}/>
+                       <img src={require('../../images/home-img-1.png')}/>
                     </div>
               </div>
           </section>

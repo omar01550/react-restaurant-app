@@ -13,6 +13,7 @@
    padding:10px 0;
    position: relative;
    overflow: hidden;
+   border-radius:2px;
 
     &:hover .overlay{
        transform: translateY(0);
@@ -82,6 +83,9 @@
 
    }
 
+}
+.icon i{
+   color: black;
 }
 
 

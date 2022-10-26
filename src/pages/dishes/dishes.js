@@ -6,6 +6,7 @@ export default function Dishes({cartProducts,setCartProducts}) {
   console.log(data);
      return(
          <section className="dishes">
+            <div className="over-lay"></div>
               <div className="container">
                    <h2 className="first-title">Our Dishes</h2>
                    <h3 className="second-title">POPULAR DISHES</h3>
