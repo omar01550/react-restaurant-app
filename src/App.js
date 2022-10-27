@@ -14,12 +14,13 @@ import CartPage from './pages/CartPage/CartPage';
 function App() {
    const data = useSelector(data => data[0] );
    const cartStore = useSelector(data => data);
-   console.log(cartStore);
    const [cartProducts,setCartProducts] = useState([]);
+
      return (
        <div className="App">
        <BrowserRouter>
-            <Navbar logo={data.logo}/>
+            <Navbar logo={data.logo} cartCount={data.cartItems.length}/>
+            
             <main>
                  <Routes>
                      <Route path="/" element={<Home/>}/>
@@ -29,6 +30,7 @@ function App() {
             </main>
        </BrowserRouter>
        </div>
+
     )
 }
 

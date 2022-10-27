@@ -1,11 +1,18 @@
 import './add_to_cart.scss';
+import {useDispatch} from 'react-redux';
 
 
 function AddToCart({ele,setCartProducts,cartProducts}) {
 
+   const dispatch = useDispatch();
+
     function addItemToCart() {
-         let x={content:"product1",id:89859894,price:9.3};
-          setCartProducts([...cartProducts,x]);
+         dispatch({
+              type:"ADDITEM",
+              payload:ele
+
+         });
+
     }
     return (
        <button onClick={addItemToCart} className="add-to-cart">Add To Cart</button>

@@ -11,7 +11,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const initState=Data;
 
 function reducer(state=initState,action) {
-     return state;
+     switch (action.type) {
+       case "ADDITEM":
+            state[0].cartItems.push(action.payload);
+            return state;
+         break;
+         case "removeItemFromCart":
+             state[0].cartItems=state[0].cartItems.filter(ele => ele.id != action.id);
+             console.log(state);
+             return state;
+           break;
+       default:
+         return state;
+     }
 }
 
 

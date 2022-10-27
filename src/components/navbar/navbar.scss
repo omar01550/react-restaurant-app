@@ -93,6 +93,7 @@ a{
 
 }
 
+
 .icon{
    width:40px;
    height:40px;
@@ -119,6 +120,17 @@ a{
   }
 }
 
+.cart-icon{
+   position: relative;
+   span{
+      position: absolute;
+      right: 40%;
+      top:-85%;
+      color: red;
+      font-weight: bold;
+      font-size:1rem;
+   }
+}
 @import '../../classes.scss';
 
 a.active{

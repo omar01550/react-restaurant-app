@@ -48,6 +48,7 @@
            "price":10.900,
            "img":"../../images/dish-3.png"
         }
-     ]
+     ],
+     "cartItems":[]
    }
 ]

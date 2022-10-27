@@ -2,7 +2,7 @@ import {React} from 'react';
  import {Link,Routes,Rotue } from "react-router-dom";
 import './navbar.scss';
 
-function Navbar({logo}) {
+function Navbar({logo,cartCount}) {
 
    function handelMenu() {
       let ul = document.querySelector("header ul");
@@ -50,7 +50,8 @@ function Navbar({logo}) {
                      <div className="icon">
                          <i className="fa fa-heart"></i>
                      </div>
-                     <div className="icon">
+                     <div className="icon cart-icon">
+                        <span>{cartCount}</span>
                          <Link to="/cart">
                               <i className="fa fa-shopping-cart"></i>
                          </Link>
