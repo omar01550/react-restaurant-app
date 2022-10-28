@@ -1,9 +1,8 @@
 import {useState} from 'react';
 
 function CartItem({card}) {
-   const [countProducts,setCountProducts] = useState(1);
 
-
+ const [countProducts,setCountProducts] = useState(1);
   return (
     <tr>
 
