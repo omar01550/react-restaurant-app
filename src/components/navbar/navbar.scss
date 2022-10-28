@@ -29,8 +29,8 @@ nav{
 }
 
 ul{
-   @media(max-width:576px){
-      position: fixed;
+   @media(max-width:767px){
+      position: absolute;
       width: 100%;
       padding: 30px 20px;
       margin-top:-20px;
@@ -53,6 +53,7 @@ li{
    border-radius:5px;
    text-transform: capitalize;
    cursor: pointer;
+   text-align: center;
    &:hover a{
       background-color: var(--main-color);
       color: white;
@@ -105,6 +106,11 @@ a{
 
    &:hover{
       background-color: var(--main-color);
+   }
+
+   &:hover i{
+
+      color: white;
    }
 
 }

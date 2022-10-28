@@ -15,28 +15,28 @@
      "menuDishes" : [
         {
            "id":811198,
-           "title":"tasty food",
+           "title":"pizza",
            "rate":4,
-           "price":15.900,
+           "price":12.3,
            "img":"../../images/dish-1.png"
         },
         {
            "id":898008,
-           "title":"tasty food",
+           "title":"hot burger",
            "rate":4,
-           "price":15.900,
+           "price":22.900,
            "img":"../../images/dish-2.png"
         },
         {
            "id":10108,
-           "title":"tasty food",
+           "title":"spicy",
            "rate":4,
            "price":13.900,
            "img":"../../images/dish-2.png"
         },
         {
            "id":89898,
-           "title":"tasty food",
+           "title":"chicken",
            "rate":3,
            "price":15.900,
            "img":"../../images/dish-2.png"

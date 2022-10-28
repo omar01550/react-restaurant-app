@@ -15,12 +15,18 @@ function App() {
    const data = useSelector(data => data[0] );
    const cartStore = useSelector(data => data);
    const [cartProducts,setCartProducts] = useState([]);
+   const [cartCount,setCount] =useState(0);
+
+   useEffect(() => {
+         console.log(true);   
+   },data)
+
 
      return (
        <div className="App">
        <BrowserRouter>
-            <Navbar logo={data.logo} cartCount={data.cartItems.length}/>
-            
+            <Navbar logo={data.logo} cartCount={cartCount}/>
+
             <main>
                  <Routes>
                      <Route path="/" element={<Home/>}/>

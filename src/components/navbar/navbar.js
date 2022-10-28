@@ -18,10 +18,10 @@ function Navbar({logo,cartCount}) {
            }
 
        });
-
-
-
      }
+
+
+
 
     return (
        <header>
@@ -42,23 +42,24 @@ function Navbar({logo,cartCount}) {
 
                  <div className="icons">
                      <div className="icon .active">
-                         <i className="fa fa-search"></i>
+                         <i className="fa fa-user"></i>
                      </div>
-                     <div className="icon">
-                         <i className="fa fa-bars" onClick={handelMenu}></i>
+                     <div className="icon" onClick={handelMenu}>
+                         <i className="fa fa-bars"></i>
                      </div>
                      <div className="icon">
                          <i className="fa fa-heart"></i>
                      </div>
-                     <div className="icon cart-icon">
-                        <span>{cartCount}</span>
-                         <Link to="/cart">
+
+
+                         <Link to="/cart" className="cart-icon icon">
+                              <span>{cartCount}</span>
                               <i className="fa fa-shopping-cart"></i>
                          </Link>
 
 
 
-                     </div>
+
 
 
 
